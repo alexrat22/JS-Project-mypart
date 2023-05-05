@@ -10,3 +10,8 @@ getCategories().then((response) => {
     );
   });
 });
+
+if (getCategories) {
+  const test = document.querySelectorAll("li");
+  test.forEach(() => addEventListener("click", () => console.log("click")));
+}
