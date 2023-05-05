@@ -1,4 +1,4 @@
-const test = document.querySelector(".categories-list");
+const listOfCategories = document.querySelector(".categories-list");
 
 fetch("https://books-backend.p.goit.global/books/category-list")
   .then((response) => {
@@ -6,9 +6,12 @@ fetch("https://books-backend.p.goit.global/books/category-list")
   })
   .then((categories) =>
     categories.map((categorie) => {
-      test.insertAdjacentHTML(
+      listOfCategories.insertAdjacentHTML(
         "beforeend",
         `<li class="categories-item">${categorie.list_name}</li>`
       );
     })
-  );
+  )
+  .catch((error) => {
+    console.log(error);
+  });
