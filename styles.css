@@ -47,7 +47,6 @@ button {
 
 .categories-item {
   font-family: "DM Sans";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.12;
@@ -61,6 +60,11 @@ button {
   font-weight: 700;
   text-transform: uppercase;
   color: #4f2ee8;
+}
+
+.categories-item-dark:hover,
+.categories-item-dark:focus {
+  color: #eac645;
 }
 
 .categories-item:not(:last-child) {
