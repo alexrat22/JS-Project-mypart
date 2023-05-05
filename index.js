@@ -12,6 +12,6 @@ getCategories().then((response) => {
 });
 
 if (getCategories) {
-  const test = document.querySelectorAll("li");
+  const test = document.querySelectorAll(".categories-item");
   test.forEach(() => addEventListener("click", () => console.log("click")));
 }
