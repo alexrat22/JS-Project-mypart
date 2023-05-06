@@ -42,6 +42,20 @@ ul {
   border-radius: 12px;
   background-color: #e0e0e0;
 }
+@media screen and (min-width: 768px) {
+  .categories__container {
+    width: 337px;
+    height: 472px;
+  }
+  .categories__container::-webkit-scrollbar-thumb {
+    height: 167px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .categories__container {
+    width: 356px;
+  }
+}
 
 .categories__item {
   font-family: "DM Sans";
@@ -51,7 +65,7 @@ ul {
   letter-spacing: -0.02em;
   color: rgba(17, 17, 17, 0.6);
 }
-.categories__item:hover {
+.categories__item:hover, .categories__item:focus {
   cursor: pointer;
   font-weight: 700;
   text-transform: uppercase;
@@ -60,8 +74,17 @@ ul {
 .categories__item:not(:last-child) {
   margin-bottom: 24px;
 }
+@media screen and (min-width: 768px) {
+  .categories__item {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+  .categories__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
 
-.is__active {
+.active__category {
   font-weight: 700;
   text-transform: uppercase;
   color: #4f2ee8;
