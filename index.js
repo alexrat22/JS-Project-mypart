@@ -9,15 +9,15 @@ getCategories().then((response) => {
       `<li class="categories__item">${categorie.list_name}</li>`
     );
   });
-});
-
-if (getCategories) {
   const allItems = document.querySelectorAll(".categories__item");
   allItems.forEach(() => addEventListener("click", onCategoryClick));
-}
+});
 
 function onCategoryClick(evt) {
   const activeCategorie = document.querySelector(".active__category");
   activeCategorie.classList.remove("active__category");
   evt.target.classList.add("active__category");
+  // if (evt.target.innerHTML === "All categories") {
+  //   // Рендер розмітки Ігоря
+  // } else //Рендер Розмітки Маргарити (передаємо в функцію evt.target.innerHTML(це назва категорії))
 }
