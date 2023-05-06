@@ -12,6 +12,12 @@ getCategories().then((response) => {
 });
 
 if (getCategories) {
-  const test = document.querySelectorAll(".categories__item");
-  test.forEach(() => addEventListener("click", () => console.log("click")));
+  const allItems = document.querySelectorAll(".categories__item");
+  allItems.forEach(() => addEventListener("click", onCategoryClick));
+}
+
+function onCategoryClick(evt) {
+  const activeCategorie = document.querySelector(".active__category");
+  activeCategorie.classList.remove("active__category");
+  evt.target.classList.add("active__category");
 }
