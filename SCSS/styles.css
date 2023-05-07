@@ -66,6 +66,7 @@ ul {
   color: rgba(17, 17, 17, 0.6);
   white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .categories__item:hover, .categories__item:focus {
   cursor: pointer;
