@@ -64,6 +64,8 @@ ul {
   line-height: 1.12;
   letter-spacing: -0.02em;
   color: rgba(17, 17, 17, 0.6);
+  white-space: nowrap;
+  overflow: hidden;
 }
 .categories__item:hover, .categories__item:focus {
   cursor: pointer;
