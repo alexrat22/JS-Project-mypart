@@ -33,6 +33,7 @@ ul {
   width: 335px;
   height: 228px;
   overflow: auto;
+  margin-left: 20px;
 
   &::-webkit-scrollbar {
     width: 8px;
@@ -48,6 +49,8 @@ ul {
   @media screen and (min-width: 768px) {
     width: 337px;
     height: 472px;
+    margin-left: 32px;
+
     &::-webkit-scrollbar-thumb {
       height: 167px;
     }
@@ -55,6 +58,7 @@ ul {
 
   @media screen and (min-width: 1440px) {
     width: 356px;
+    margin-left: 24px;
   }
 }
 
@@ -78,14 +82,14 @@ ul {
   }
 
   &:not(:last-child) {
-    margin-bottom: 24px;
+    padding-bottom: 24px;
   }
 
   @media screen and (min-width: 768px) {
     font-size: 18px;
     line-height: 1.33;
     &:not(:last-child) {
-      margin-bottom: 32px;
+      padding-bottom: 32px;
     }
   }
 }
